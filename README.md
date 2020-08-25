@@ -2,6 +2,8 @@
 `` myDHT `` contains bash and python scripts for logging temparature and humidity of our lab.
 
 ## Get started
+See official repo: [arduino-cli](https://github.com/arduino/arduino-cli).
+
 ```sh
 # Check arduino-cli commands first!
 arduino-cli core install arduino:avr
@@ -25,8 +27,7 @@ arduino-cli core update-index
 arduino-cli lib install "DHT sensor library"
 arduino-cli lib search DHT
 arduino-cli lib search DHT | less
-arduino-cli sketch new ~/Documents/Arduino/test
-arduino-cli upload --fqbn arduino:avr:uno SOS
+arduino-cli sketch new ~/Documents/Arduino/newOne
 arduino-cli upload -p /dev/ttyUSB0 --fqbn arduino:avr:uno SOS
 arduino-cli upload -p /dev/ttyUSB0 --fqbn arduino:avr:uno myDHT
 ```
